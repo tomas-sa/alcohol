@@ -111,3 +111,37 @@
     width: 100%;
     padding: 10px 0;
 }
+@media screen and (max-width: 1160px) {
+    .contenido{
+        flex-direction: column;
+        gap: 50px;
+        padding: 0;
+        width: 90%;
+        position: initial;
+        top: initial;
+        transform: initial;
+        margin: auto;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .contenedor-main{
+        gap: 40px;
+    }
+    .contenedor-sec{
+        width: 100%;
+    }
+    .contenido >*{
+        width: 100%;
+    }
+    .aside{
+        display: none;
+    }
+    .App{
+        gap: 0;
+        justify-content: center;
+    }
+}
