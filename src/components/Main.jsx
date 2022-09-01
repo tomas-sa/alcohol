@@ -47,8 +47,8 @@ export default function Main(props) {
     return (
         <div className="contenedor">
             <div className="headers">
-                <h1>Calculadora de gramos de alcohol en sangre</h1>
-                <h3>Creado solo con fines educativos. La concentración de alcohol en sangre al manejar debería ser siempre de 0gr</h3>
+                <h1 className='titulo'>Gramos de alcohol en sangre</h1>
+                <h3 className='subTitulo'>Creado solo con fines educativos. Si vas a conducir.. <br /> no consumas alcohol</h3>
             </div>
             <div className="contenido">
                 <form onSubmit={submitHandler} className='form' action="">
@@ -72,7 +72,7 @@ export default function Main(props) {
                         </select>
                     </div>
                     <div className="contenedor-sec">
-                        <h1>{props.resultado && `Alcohól por litro de sangre: ${props.resultado}gr`}</h1>
+                        <h1>{props.resultado && `Alcohol por litro de sangre: ${props.resultado}gr`}</h1>
                         <h3 style={props.resultado > country ? styleNotOk: styleOk}>{props.resultado && (props.resultado > country ? 'usted no puede conducir': 'usted puede conducir')}</h3>
                     </div>
                 </div>
