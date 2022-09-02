@@ -60,6 +60,9 @@
 .contenedor{
     width: 70%;
 }
+.contenedor-prim{
+    width: 100%;
+}
 .contenido{
     position: absolute;
     top: 50%;
@@ -111,6 +114,7 @@
     width: 100%;
     padding: 10px 0;
 }
+
 @media screen and (max-width: 1160px) {
     .contenido{
         flex-direction: column;
@@ -144,4 +148,16 @@
         gap: 0;
         justify-content: center;
     }
+    .titulo {
+        font-size: 5rem;
+    }
+    .form >*, .pais{
+        height: 5rem;
+        font-size: 2rem;
+    }
+    .contenedor-sec{
+        height: 20rem;
+        font-size: 2rem;
+    }
+
 }

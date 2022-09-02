@@ -72,7 +72,7 @@ export default function Main(props) {
                         </select>
                     </div>
                     <div className="contenedor-sec">
-                        <h1>{props.resultado && `Alcohol por litro de sangre: ${props.resultado}gr`}</h1>
+                        <h1>{props.resultado ? `Alcohol por litro de sangre: ${props.resultado}gr`: 'Fuente: driving.org'}</h1>
                         <h3 style={props.resultado > country ? styleNotOk: styleOk}>{props.resultado && (props.resultado > country ? 'usted no puede conducir': 'usted puede conducir')}</h3>
                     </div>
                 </div>
